@@ -9,8 +9,8 @@ set number
 set t_Co=256
 
 syntax on
-"set smartindent
-"set smarttab
+set smartindent
+set smarttab
 
 let mapleader=","
 "map <leader>rt :w <CR> :call VimuxRunCommand("clear; rake") <CR>
@@ -37,4 +37,6 @@ function! RSpecCurrent()
   
 endfunction
 
+map <leader>l :w <CR> :call VimuxRunLastCommand()<CR>
+map <leader>f :w <CR> :call VimuxRunCommand("clear; rspec -fd " . expand("%p"))<CR>
 map <leader>R :w <CR> :call VimuxRunCommand("clear; rspec " . expand("%p") . ":" . line(".")) <CR>
