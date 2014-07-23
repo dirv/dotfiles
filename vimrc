@@ -20,6 +20,12 @@ filetype on
 filetype indent on
 filetype plugin on
 
+set background=dark
+let g:solarized_visiblity = "high"
+let g:solarized_contract = "high"
+let g:solarized_termcolors = 256
+colorscheme solarized
+
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 inoremap <Esc> <Esc>:w<CR>
