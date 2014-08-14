@@ -6,6 +6,8 @@ set softtabstop=2
 set tabstop=2
 set autoindent
 set number
+set ruler
+set laststatus=2
 set t_Co=256
 
 syntax on
@@ -26,12 +28,23 @@ let g:solarized_contract = "high"
 let g:solarized_termcolors = 256
 colorscheme solarized
 
+let g:airline_left_sep = ' '
+let g:airline_right_sep = ''
+let g:airline#extensions#tmuxline#enabled = 0
+let g:tmuxline_powerline_separators = 0
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:tmuxline_separators = {
+    \ 'left' : '',
+    \ 'left_alt': '',
+    \ 'right' : '',
+    \ 'right_alt' : '',
+    \ 'space' : ' '}
 
 inoremap <Esc> <Esc>:w<CR>
 
 set updatetime=100
 autocmd CursorHoldI,CursorHold,BufLeave <buffer> silent! :update
+autocmd BufWritePre *.py :%s/\s\+$//e
 
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
