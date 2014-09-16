@@ -15,7 +15,6 @@ set smartindent
 set smarttab
 set scrolloff=5
 
-set clipboard=unnamed
 let mapleader=","
 
 call pathogen#infect()
