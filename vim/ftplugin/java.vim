@@ -11,3 +11,8 @@ endfunction
 
 map <buffer> <leader>R <CR>:call VimuxRunCommand("clear; buildr test")<CR>
 map <buffer> <leader>f <CR>:call VimuxRunCommand("clear; buildr test:" . GetJavaTestName2())<CR>
+inoremap <buffer> <C-u> <C-O>:JIS<CR>
+
+exe "setlocal dict=" . g:JavaImpDataDir . "/JavaImp.txt"
+setlocal complete-=k
+setlocal complete+=k

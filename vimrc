@@ -45,7 +45,15 @@ let g:tmuxline_separators = {
     \ 'right_alt' : '',
     \ 'space' : ' '}
 
+
+let g:JavaImpPaths=$HOME."/Work/jTtt/cli/src/main/java," .
+  \ $HOME."/Work/http/src/main/java," .
+  \ $HOME."/Work/http/src/test/java," .
+  \ $HOME."/Work/jTtt/web/src/main/java," .
+  \ $HOME."~/vim/JavaImp/jmplst," .
+  \ $HOME."/.m2/repository"
 inoremap <Esc> <Esc>:w<CR>
+
 
 set updatetime=100
 autocmd CursorHoldI,CursorHold,BufLeave <buffer> silent! :update
