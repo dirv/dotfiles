@@ -31,6 +31,3 @@
 [submodule "vim/bundle/vim-classpath"]
 	path = vim/bundle/vim-classpath
 	url = git://github.com/tpope/vim-classpath.git
-[submodule "vim/bundle/VimClojure"]
-	path = vim/bundle/VimClojure
-	url = https://github.com/dirv/VimClojure
