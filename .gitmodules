@@ -31,3 +31,6 @@
 [submodule "vim/bundle/vim-classpath"]
 	path = vim/bundle/vim-classpath
 	url = git://github.com/tpope/vim-classpath.git
+[submodule "vim/bundle/rename.vim"]
+	path = vim/bundle/rename.vim
+	url = https://github.com/danro/rename.vim
