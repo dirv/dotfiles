@@ -11,7 +11,6 @@ set laststatus=2
 set t_Co=256
 
 syntax on
-set smartindent
 set smarttab
 set scrolloff=5
 
@@ -20,14 +19,14 @@ let mapleader=","
 call pathogen#infect()
 
 filetype on
-filetype indent on
-filetype plugin on
+filetype plugin indent on
 
 set background=dark
 let g:solarized_visiblity = "high"
 let g:solarized_contract = "high"
 let g:solarized_termcolors = 256
 colorscheme solarized
+
 
 let g:airline_left_sep = ' '
 let g:airline_right_sep = ''
@@ -53,7 +52,6 @@ let g:JavaImpPaths=$HOME."/Work/jTtt/cli/src/main/java," .
   \ $HOME."~/vim/JavaImp/jmplst," .
   \ $HOME."/.m2/repository"
 inoremap <Esc> <Esc>:w<CR>
-
 
 set updatetime=100
 autocmd CursorHoldI,CursorHold,BufLeave <buffer> silent! :update

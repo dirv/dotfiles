@@ -34,3 +34,6 @@
 [submodule "vim/bundle/rename.vim"]
 	path = vim/bundle/rename.vim
 	url = https://github.com/danro/rename.vim
+[submodule "vim/bundle/vim-projectionist"]
+	path = vim/bundle/vim-projectionist
+	url = https://github.com/dirv/vim-projectionist
