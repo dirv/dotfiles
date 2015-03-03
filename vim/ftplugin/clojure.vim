@@ -12,5 +12,6 @@ function! CreateSpecNsFromSpecFile(file)
 endfunction
 
 function! CreateSrcNsFromSpecFile(file)
-  return substitute(CreateSpecNs(a:file), '-spec', '', 'g')
+  return substitute(CreateSpecNsFromSpecFile(a:file), '-spec', '', 'g')
 endfunction
+

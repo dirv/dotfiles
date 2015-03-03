@@ -1,9 +1,9 @@
 set nocompatible
 
 set expandtab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set autoindent
 set number
 set ruler
@@ -60,3 +60,33 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
 map <leader>l :w <CR> :call VimuxRunLastCommand()<CR>
+
+let g:projectionist_heuristics = {
+      \ "src/main/java/" : {
+      \ "src/main/java/*.java": {"alternate": "src/test/java/{}Test.java",
+      \                          "type": "src"},
+      \ "src/test/java/*Test.java": {"alternate": "src/main/java/{}.java",
+      \                          "type": "spec"},
+      \ },
+      \ "project.clj" : {
+      \ "src/*.clj": {"alternate": "spec/{}_spec.clj",
+      \               "type": "src"},
+      \ "spec/*_spec.clj": {"alternate": "src/{}.clj",
+      \                     "type": "spec"}
+      \ }
+      \ }
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+function! CreateSpecAndSrcFile(file)
+    exec "Esrc " . a:file
+    normal isrc	
+    w
+    vs
+    exec "Espec " . a:file
+    normal ispec	
+endfunction
+
+command! -nargs=1 -complete=dir CreateBoth :call CreateSpecAndSrcFile("<args>")

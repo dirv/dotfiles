@@ -16,3 +16,5 @@ inoremap <buffer> <C-u> <C-O>:JIS<CR>
 exe "setlocal dict=" . g:JavaImpDataDir . "/JavaImp.txt"
 setlocal complete-=k
 setlocal complete+=k
+set softtabstop=4
+set tabstop=4
