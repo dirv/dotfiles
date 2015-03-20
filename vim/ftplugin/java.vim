@@ -11,6 +11,7 @@ endfunction
 
 map <buffer> <leader>R <CR>:call VimuxRunCommand("clear; buildr test")<CR>
 map <buffer> <leader>f <CR>:call VimuxRunCommand("clear; buildr test:" . GetJavaTestName2())<CR>
+map <buffer> <leader>b <CR>:call VimuxRunCommand("clear; gradle build 2> build.txt")<CR>
 inoremap <buffer> <C-u> <C-O>:JIS<CR>
 
 exe "setlocal dict=" . g:JavaImpDataDir . "/JavaImp.txt"

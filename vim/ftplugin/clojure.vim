@@ -15,3 +15,4 @@ function! CreateSrcNsFromSpecFile(file)
   return substitute(CreateSpecNsFromSpecFile(a:file), '-spec', '', 'g')
 endfunction
 
+let b:delimitMate_autoclose = 0

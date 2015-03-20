@@ -9,6 +9,7 @@ set number
 set ruler
 set laststatus=2
 set t_Co=256
+set noswapfile
 
 syntax on
 set smarttab
@@ -90,3 +91,9 @@ function! CreateSpecAndSrcFile(file)
 endfunction
 
 command! -nargs=1 -complete=dir CreateBoth :call CreateSpecAndSrcFile("<args>")
+
+set errorformat=%f:%l:\ error:\ %m
+noremap j gj
+noremap k gk
+noremap gj j
+noremap gk k
