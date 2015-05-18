@@ -1,1 +1,3 @@
-setlocal lispwords += "describe,it,context,around"
+setlocal lispwords+=describe
+setlocal lispwords+=it
+
