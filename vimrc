@@ -3,8 +3,11 @@ set nocompatible
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+
 set tabstop=4
 set autoindent
+set smarttab
+
 set number
 set ruler
 set laststatus=2
@@ -12,8 +15,7 @@ set t_Co=256
 set noswapfile
 
 syntax on
-set smarttab
-set scrolloff=5
+set scrolloff=3
 
 let mapleader=","
 
@@ -97,3 +99,5 @@ noremap j gj
 noremap k gk
 noremap gj j
 noremap gk k
+
+
