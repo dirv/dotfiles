@@ -1,10 +1,10 @@
 set nocompatible
 
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 
-set tabstop=4
+set tabstop=2
 set autoindent
 set smarttab
 
@@ -65,6 +65,16 @@ hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=whi
 map <leader>l :w <CR> :call VimuxRunLastCommand()<CR>
 
 let g:projectionist_heuristics = {
+      \ "Rakefile" : {
+      \ "app/*.rb" : {"alternate": "spec/{}_spec.rb",
+      \               "type": "app"},
+      \ "lib/*.rb" : {"alternate": "spec/{}_spec.rb",
+      \               "type" : "lib"},
+      \ "spec/controllers/*_spec.rb" : {"alternate": "app/controllers/{}.rb",
+      \                                 "type": "cspec"},
+      \ "spec/*_spec.rb" : {"alternate": "lib/{}.rb",
+      \                     "type" : "spec"},
+      \ },
       \ "src/main/java/" : {
       \ "src/main/java/*.java": {"alternate": "src/test/java/{}Test.java",
       \                          "type": "src"},
@@ -100,4 +110,4 @@ noremap k gk
 noremap gj j
 noremap gk k
 
-
+let g:paredit_matchlines = 500
