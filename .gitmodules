@@ -1,48 +1,48 @@
 [submodule "vim/bundle/vim-airline"]
 	path = vim/bundle/vim-airline
-	url = https://github.com/bling/vim-airline
+	url = http://github.com/bling/vim-airline
 [submodule "vim/bundle/tmuxline.vim"]
 	path = vim/bundle/tmuxline.vim
-	url = https://github.com/edkolev/tmuxline.vim
+	url = http://github.com/edkolev/tmuxline.vim
 [submodule "vim/bundle/vim-tmux-navigator"]
 	path = vim/bundle/vim-tmux-navigator
-	url = https://github.com/christoomey/vim-tmux-navigator
+	url = http://github.com/christoomey/vim-tmux-navigator
 [submodule "vim/bundle/cscope.vim"]
 	path = vim/bundle/cscope.vim
-	url = https://github.com/vim-scripts/cscope.vim
+	url = http://github.com/vim-scripts/cscope.vim
 [submodule "vim/bundle/delimitMate"]
 	path = vim/bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate
+	url = http://github.com/Raimondi/delimitMate
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
-	url = https://github.com/sirver/ultisnips
+	url = http://github.com/sirver/ultisnips
 [submodule "vim/bundle/vim-snippets"]
 	path = vim/bundle/vim-snippets
-	url = https://github.com/dirv/vim-snippets
+	url = http://github.com/dirv/vim-snippets
 [submodule "vim/bundle/JavaImp.vim--Lee"]
 	path = vim/bundle/JavaImp.vim--Lee
-	url = https://github.com/rustushki/JavaImp.vim--Lee
+	url = http://github.com/rustushki/JavaImp.vim--Lee
 [submodule "vim/bundle/paredit.vim"]
 	path = vim/bundle/paredit.vim
-	url = https://github.com/vim-scripts/paredit.vim
+	url = http://github.com/vim-scripts/paredit.vim
 [submodule "vim/bundle/vim-fireplace"]
 	path = vim/bundle/vim-fireplace
-	url = https://github.com/tpope/vim-fireplace
+	url = http://github.com/tpope/vim-fireplace
 [submodule "vim/bundle/vim-classpath"]
 	path = vim/bundle/vim-classpath
 	url = git://github.com/tpope/vim-classpath.git
 [submodule "vim/bundle/rename.vim"]
 	path = vim/bundle/rename.vim
-	url = https://github.com/danro/rename.vim
+	url = http://github.com/danro/rename.vim
 [submodule "vim/bundle/vim-projectionist"]
 	path = vim/bundle/vim-projectionist
-	url = https://github.com/tpope/vim-projectionist
+	url = http://github.com/tpope/vim-projectionist
 [submodule "vim/bundle/vim-repeat"]
 	path = vim/bundle/vim-repeat
-	url = https://github.com/tpope/vim-repeat
+	url = http://github.com/tpope/vim-repeat
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = http://github.com/tpope/vim-surround
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+	url = http://github.com/scrooloose/nerdtree.git
