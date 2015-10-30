@@ -36,7 +36,7 @@
 	url = https://github.com/danro/rename.vim
 [submodule "vim/bundle/vim-projectionist"]
 	path = vim/bundle/vim-projectionist
-	url = https://github.com/dirv/vim-projectionist
+	url = https://github.com/tpope/vim-projectionist
 [submodule "vim/bundle/vim-repeat"]
 	path = vim/bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat
