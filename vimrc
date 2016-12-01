@@ -31,6 +31,7 @@ let g:solarized_termcolors = 256
 colorscheme solarized
 
 
+function! AirlineInit()
 let g:airline_left_sep = ' '
 let g:airline_right_sep = ''
 let g:airline_section_b = ''
@@ -39,14 +40,14 @@ let g:airline_section_y = ''
 let g:airline_section_z = airline#section#create(['%l/%L'])
 let g:airline#extensions#tmuxline#enabled = 0
 let g:tmuxline_powerline_separators = 0
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:tmuxline_separators = {
     \ 'left' : '',
     \ 'left_alt': '',
     \ 'right' : '',
     \ 'right_alt' : '',
     \ 'space' : ' '}
-
+endfunction
+autocmd VimEnter * call AirlineInit()
 
 let g:JavaImpPaths=$HOME."/Work/jTtt/cli/src/main/java," .
   \ $HOME."/Work/http/src/main/java," .

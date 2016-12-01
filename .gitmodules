@@ -16,9 +16,6 @@
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
 	url = http://github.com/sirver/ultisnips
-[submodule "vim/bundle/vim-snippets"]
-	path = vim/bundle/vim-snippets
-	url = http://github.com/dirv/vim-snippets
 [submodule "vim/bundle/JavaImp.vim--Lee"]
 	path = vim/bundle/JavaImp.vim--Lee
 	url = http://github.com/rustushki/JavaImp.vim--Lee
@@ -46,3 +43,6 @@
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/vim-snippets"]
+	path = vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
