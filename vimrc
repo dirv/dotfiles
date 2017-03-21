@@ -115,4 +115,7 @@ noremap k gk
 noremap gj j
 noremap gk k
 
+map <c-w><c-o> <c-w><c-_>
+map <c-w>o <c-w><c-_>
+
 let g:paredit_matchlines = 500
