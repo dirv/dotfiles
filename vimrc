@@ -22,7 +22,6 @@ let mapleader=","
 call pathogen#infect()
 
 filetype on
-filetype plugin indent on
 
 set background=dark
 let g:solarized_visiblity = "high"
@@ -49,13 +48,8 @@ let g:tmuxline_separators = {
 endfunction
 autocmd VimEnter * call AirlineInit()
 
-let g:JavaImpPaths=$HOME."/Work/jTtt/cli/src/main/java," .
-  \ $HOME."/Work/http/src/main/java," .
-  \ $HOME."/Work/http/src/test/java," .
-  \ $HOME."/Work/jTtt/web/src/main/java," .
-  \ $HOME."~/vim/JavaImp/jmplst," .
-  \ $HOME."/.m2/repository"
 inoremap <Esc> <Esc>:w<CR>
+nnoremap <C-W>o <Nop>
 
 set updatetime=100
 autocmd CursorHoldI,CursorHold,BufLeave <buffer> silent! :update
@@ -91,6 +85,12 @@ let g:projectionist_heuristics = {
       \               "type": "src"},
       \ "spec/*_spec.clj": {"alternate": "src/{}.clj",
       \                     "type": "spec"}
+      \ },
+      \ "build.boot" : {
+      \ "src/*.cljs": {"alternate": "test/{}_test.cljs",
+      \               "type": "src"},
+      \ "test/*_test.cljs": {"alternate": "src/{}.cljs",
+      \                     "type": "test"}
       \ }
       \ }
 
