@@ -97,6 +97,12 @@ let g:projectionist_heuristics = {
       \               "type": "src"},
       \ "test/*_test.cljs": {"alternate": "src/{}.cljs",
       \                     "type": "test"}
+      \ },
+      \ "Package.swift" : {
+      \ "Sources/*.swift": {"alternate": "Tests/{}Spec.swift",
+      \               "type": "src"},
+      \ "Tests/*Spec.swift": {"alternate": "Sources/{}.swift",
+      \                     "type": "test"}
       \ }
       \ }
 
