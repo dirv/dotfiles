@@ -8,12 +8,13 @@
 
 dir=~/dotfiles                        # dotfiles directory
 olddir=~/dotfiles_old                 # old dotfiles backup directory
-files="bashrc vimrc vim tmux.conf tmuxline.snapshot.conf profile config/nvim/init.vim"    # list of files/folders to symlink in homedir
+files="bashrc vimrc vim tmux.conf tmuxline.snapshot.conf profile config/nvim/init.vim local/share/nvim/site/autoload/plug.vim"    # list of files/folders to symlink in homedir
 
 ##########
 
-# ensure .config/nvim exists
+# ensure nvim directories exist
 mkdir -p ~/.config/nvim
+mkdir -p ~/.local/share/nvim/site/autoload
 
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
