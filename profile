@@ -1,13 +1,12 @@
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PROMPT="%F{cyan}%2~%f %# "
+export EDITOR="/usr/local/Cellar/neovim/0.3.1/bin/nvim"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 alias b="bundle exec"
 
-source ~/.bashrc
+source /usr/local/opt/chruby/share/chruby/chruby.sh
 
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-unset DOCKER_CERT_PATH
-unset DOCKER_TLS_VERIFY
-export DOCKER_HOST=tcp://192.168.59.103:2375
+RUBIES+=(/usr/local/opt/ruby@*)

@@ -6,7 +6,6 @@ set softtabstop=2
 
 set tabstop=2
 set autoindent
-set smarttab
 
 set number
 set ruler
@@ -26,25 +25,31 @@ filetype on
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tpope/vim-projectionist'
-Plug 'altercation/vim-colors-solarized'
-Plug 'shaunlebron/parinfer'
+Plug 'danilo-augusto/vim-afterglow'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'plasticboy/vim-markdown'
 Plug 'danro/rename.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'sbdchd/neoformat'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
 call plug#end()
 
 syntax enable
-set termguicolors
-set background=dark
-colorscheme solarized
-let g:airline_theme='solarized'
+"set termguicolors
+"set background=dark
+set background=light
+"colorscheme afterglow
+
+let g:afterglow_italic_comments=1
+let g:airline_theme='afterglow'
 
 au! BufRead,BufNewFile *.markdown set filetype=mkd
 au! BufRead,BufNewFile *.md       set filetype=mkd
+"autocmd BufWritePre *.js Neoformat
 let g:vim_markdown_folding_disabled = 1
 
 function! AirlineInit()
@@ -137,3 +142,9 @@ map <c-w><c-o> <c-w><c-_>
 map <c-w>o <c-w><c-_>
 
 let g:markdown_enable_spell_checking = 0
+let g:prettier#autoformat_config_present = 1
+let g:prettier#autoformat_require_pragma = 0
+let g:prettier#autoformat_config_files = [ ".prettierrc.js" ]
+
+let g:neoformat_try_node_exe = 1
+autocmd BufWritePre *.js Neoformat
