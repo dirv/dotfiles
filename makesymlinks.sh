@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                        # dotfiles directory
 olddir=~/dotfiles_old                 # old dotfiles backup directory
-files="zshrc vimrc tmux.conf profile config/nvim/init.vim local/share/nvim/site/autoload/plug.vim"    # list of files/folders to symlink in homedir
+files=(zprofile tmux.conf config/nvim/init.vim local/share/nvim/site/autoload/plug.vim)    # list of files/folders to symlink in homedir
 
 ##########
 
